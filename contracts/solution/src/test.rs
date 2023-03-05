@@ -68,6 +68,14 @@ fn fca00c_fast() {
     let points = engine.p_points();
 
     println!("Points: {}", points);
+    
+    let nangluong = engine.p_fuel();
+    println!("Nang luong: {}", nangluong);
+    let vitri = engine.p_pos();
+    println!("Vi tri: {:?}", vitri);
+    let bando = engine.get_map();
+    println!("Ban do: {:?}", bando);
+    
     assert!(points >= 100);
 }
 
